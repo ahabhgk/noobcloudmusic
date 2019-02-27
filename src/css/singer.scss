@@ -1,0 +1,232 @@
+body {
+    background: #f5f5f5;
+}
+.content {
+    width: 980px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 0;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    .main {
+        display: inline-block;
+        border-right: 1px solid #d3d3d3;
+        width: 640px;
+        padding: 20px 33.5px;
+        #singer-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #singer-pic {
+            height: 300px;
+            width: 640px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #singer-nav {
+            display: flex;
+            font-size: 16px;
+            background: #f5f5f5;
+            border: 1px solid #d3d3d3;
+            li {
+                cursor: pointer;
+                line-height: 37px;
+                width: 136px;
+                height: 37px;
+                text-align: center;
+            }
+            .active {
+                height: 36px;
+                background: #fff;
+                border-top: 2px solid #d90000;
+                border-left: 1px solid #d3d3d3;
+                border-right: 1px solid #d3d3d3;
+            }
+        }
+        
+        // 单曲
+        #singer-songs {
+            margin: 20px 0;
+            #play-all {
+                margin-bottom: 20px;
+                cursor: pointer;
+                width: 100px;
+                height: 30px;
+                color: #fff;
+                line-height: 30px;
+                background: #007fd3;
+                border-radius: 5px;
+                border: 1px solid #f5f5f5;
+                &:hover {
+                    background: #229ff2;
+                }
+            }
+            .bg-w {
+                background: #fff;
+            }
+            .bg-b {
+                background: #f2f2f2;
+            }
+            .song {
+                line-height: 30px;
+                height: 30px;
+                font-size: 12px;
+                display: flex;
+                .album {
+                    float: right;
+                    display: block;
+                    width: 130px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .number {
+                    display: inline-block;
+                    width: 10px;
+                    color: #aaa;
+                    margin-left: 20px;
+                    margin-right: 40px;
+                }
+                .btn {
+                    cursor: pointer;
+                    position: relative;
+                    top: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 3px solid #b3b3b3;
+                    background: #f2f2f2;
+                    &::before, &::after {
+                        position: absolute;
+                        content: '';
+                        font-size: 0;
+                    }
+                    &:hover {
+                        border-color: #999;
+                    }
+                }
+                .play {
+                    &::before {
+                        top: 1px;
+                        left: 4px;
+                        border-left: 8px solid #b3b3b3;
+                        border-top: 6px solid transparent;
+                        border-bottom: 6px solid transparent;
+                    }
+                    &:hover {
+                        &::before {
+                            border-left-color: #999;
+                        }
+                    }
+                }
+                .add {
+                    display: none;
+                    margin-right: 70px;
+                    &::before {
+                        top: 5.5px;
+                        left: 2.4px;
+                        background: #b3b3b3;
+                        width: 9px;
+                        height: 3px;
+                    }
+                    &::after {
+                        top: 2.5px;
+                        left: 5.5px;
+                        background: #b3b3b3;
+                        width: 3px;
+                        height: 9px;
+                    }
+                    &:hover {
+                        &::after, &::before {
+                            background: #999;
+                        }
+                    }
+                }
+                .song-name {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: inline-block;
+                    width: 310px;
+                    margin-left: 10px;
+                    color: #000;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .song-time {
+                    display: inline-block;
+                    width: 90px;
+                }
+                &:hover {
+                    .song-time {
+                        display: none;
+                    }
+                    .add {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        // 专辑
+        #singer-album {
+            display: none;
+            margin: 20px 0;
+            width: 640px;
+            .album {
+                display: inline-block;
+                margin: 0 6px 30px;
+                width: 147px;
+                height: 175px;
+                .name {
+                    height: 28px;
+                    font-size: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        //介绍
+        #singer-introduce {
+            display: none;
+            padding-top: 20px;
+            font-size: 16px;
+            text-indent: 32px;
+        }
+    }
+    .sidebar {
+        padding: 20px 30px;
+        float: right;
+        width: 210px;
+        .sidebar-tit {
+            font-size: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+        .rec-singer-wrap {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .rec-singer {
+                width: 50px;
+                height: 92px;
+                margin: 0 2px;
+                a {
+                    font-size: 14px;
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: #000000;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

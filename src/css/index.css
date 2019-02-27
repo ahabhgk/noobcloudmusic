@@ -1,0 +1,230 @@
+.content {
+  width: 100%;
+  background: #f5f5f5; }
+  .content .carousel-wrap {
+    background: #f6eddf;
+    transition: 1s; }
+    .content .carousel-wrap .carousel-main {
+      width: 982px;
+      height: 336px;
+      margin: 0 auto;
+      font-size: 0; }
+      .content .carousel-wrap .carousel-main #carousel {
+        width: 730px;
+        height: 336px;
+        display: inline-block; }
+        .content .carousel-wrap .carousel-main #carousel #carousel_pre, .content .carousel-wrap .carousel-main #carousel #carousel_next {
+          width: 37px;
+          height: 63px;
+          cursor: pointer; }
+        .content .carousel-wrap .carousel-main #carousel #carousel_pre {
+          background: url(../img/banner.png) 0 -360px; }
+          .content .carousel-wrap .carousel-main #carousel #carousel_pre:hover {
+            background: url(../img/banner.png) 0 -430px; }
+        .content .carousel-wrap .carousel-main #carousel #carousel_next {
+          background: url(../img/banner.png) 0 -510px; }
+          .content .carousel-wrap .carousel-main #carousel #carousel_next:hover {
+            background: url(../img/banner.png) 0 -578px; }
+      .content .carousel-wrap .carousel-main .download {
+        display: inline-block;
+        width: 252px;
+        height: 336px;
+        background: url(../img/download.png); }
+        .content .carousel-wrap .carousel-main .download button {
+          cursor: pointer;
+          float: left;
+          width: 215px;
+          height: 56px;
+          margin-top: 212px;
+          margin-left: 19px;
+          background: transparent; }
+          .content .carousel-wrap .carousel-main .download button:hover {
+            background: url(../img/download.png) 0 -340px; }
+  .content .wrap {
+    width: 980px;
+    height: 1170px;
+    margin: 0 auto;
+    background: #fff; }
+    .content .wrap .main {
+      float: left;
+      display: flex;
+      width: 687px;
+      padding: 20px 20px 40px 20px;
+      border-left: 1px solid #d3d3d3;
+      border-right: 1px solid #d3d3d3;
+      flex-direction: column; }
+      .content .wrap .main .head-text {
+        width: 643px;
+        height: 33px;
+        font-size: 0;
+        padding: 0 10px 0 34px;
+        border-bottom: 2px solid #d20000;
+        background: url(../img/index.png) no-repeat -226px -156px; }
+        .content .wrap .main .head-text .text {
+          font-size: 20px;
+          color: #000; }
+        .content .wrap .main .head-text .list {
+          color: #585858;
+          font-size: 12px;
+          margin: 0 16px; }
+        .content .wrap .main .head-text span {
+          color: #585858;
+          font-size: 12px; }
+        .content .wrap .main .head-text .more {
+          color: #585858;
+          font-size: 12px;
+          float: right;
+          margin-top: 8px;
+          padding-right: 14px;
+          background: url(../img/index.png) no-repeat 26px -238px; }
+      .content .wrap .main .rec {
+        font-size: 0;
+        width: 140px;
+        margin-bottom: 30px;
+        position: relative;
+        margin-top: 20px; }
+        .content .wrap .main .rec .bottom {
+          width: 140px;
+          height: 28px;
+          position: absolute;
+          top: 112px;
+          background: rgba(0, 0, 0, 0.6); }
+          .content .wrap .main .rec .bottom .icon-headphone {
+            float: left;
+            width: 18px;
+            height: 28px;
+            margin-left: 10px;
+            background: url(../img/iconall.png) no-repeat 0 -16px; }
+          .content .wrap .main .rec .bottom .play-number {
+            float: left;
+            margin-top: 4px;
+            font-size: 12px;
+            color: #a5a5a5; }
+          .content .wrap .main .rec .bottom .play {
+            width: 18px;
+            height: 18px;
+            float: right;
+            margin: 6px 8px 0 0;
+            background: url(../img/iconall.png) no-repeat 0 0; }
+        .content .wrap .main .rec .tit {
+          display: block;
+          margin-top: 6px;
+          font-size: 14px;
+          color: #000; }
+          .content .wrap .main .rec .tit:hover {
+            text-decoration: underline; }
+        .content .wrap .main .rec .disc {
+          font-size: 12px;
+          color: #a5a5a5; }
+      .content .wrap .main .box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 678px;
+        justify-content: space-between; }
+        .content .wrap .main .box .rec-wrap {
+          width: 140px; }
+          .content .wrap .main .box .rec-wrap #rec-week {
+            cursor: pointer;
+            font-size: 16px;
+            color: #f6eddf;
+            line-height: 33px;
+            font-weight: bold;
+            text-align: center;
+            width: 140px;
+            height: 33px;
+            background: #d00010;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px; }
+          .content .wrap .main .box .rec-wrap #rec-date {
+            cursor: pointer;
+            font-size: 90px;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 107px;
+            color: #000;
+            width: 140px;
+            height: 107px;
+            background: url(../img/date.png) no-repeat 0 -150px; }
+        .content .wrap .main .box .new-wrap {
+          width: 687px;
+          height: 184px;
+          border: 1px solid #d3d3d3;
+          margin-top: 20px;
+          background: #f5f5f5;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          .content .wrap .main .box .new-wrap .new-btn {
+            width: 18px;
+            height: 18px; }
+          .content .wrap .main .box .new-wrap .new-main {
+            width: 645px;
+            height: 150px;
+            margin-top: 28px;
+            overflow: hidden;
+            position: relative; }
+            .content .wrap .main .box .new-wrap .new-main #new-con {
+              position: absolute;
+              left: 0;
+              transition: 1s;
+              width: 1290px;
+              display: flex; }
+              .content .wrap .main .box .new-wrap .new-main #new-con .record-wrap {
+                font-size: 0;
+                height: 150px; }
+                .content .wrap .main .box .new-wrap .new-main #new-con .record-wrap .record {
+                  margin-left: 11px;
+                  width: 118px;
+                  height: 100px;
+                  background: url(../img/coverall.png) no-repeat 0 -570px; }
+                .content .wrap .main .box .new-wrap .new-main #new-con .record-wrap .record-tit {
+                  width: 100px;
+                  margin-left: 11px;
+                  font-size: 12px;
+                  color: #000;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap; }
+                .content .wrap .main .box .new-wrap .new-main #new-con .record-wrap .singer {
+                  width: 100px;
+                  margin-left: 11px;
+                  font-size: 12px;
+                  color: #a5a5a5;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap; }
+    .content .wrap .sidebar {
+      float: right;
+      width: 250px;
+      height: 1170px;
+      border-right: 1px solid #d3d3d3; }
+      .content .wrap .sidebar .sidebar-wrap {
+        width: 210px;
+        margin: 15px auto; }
+        .content .wrap .sidebar .sidebar-wrap .sidebar-tit {
+          border-bottom: 2px solid #d3d3d3;
+          color: #000;
+          font-size: 14px;
+          margin-bottom: 14px; }
+        .content .wrap .sidebar .sidebar-wrap .singer-info {
+          color: #000;
+          display: inline-block;
+          width: 210px;
+          height: 62px;
+          margin: 10px 0;
+          background: #f5f5f5;
+          border: 1px solid #d3d3d3; }
+          .content .wrap .sidebar .sidebar-wrap .singer-info img {
+            float: left; }
+          .content .wrap .sidebar .sidebar-wrap .singer-info .name {
+            display: inline-block;
+            width: 130px;
+            margin-top: 8px;
+            padding-left: 16px; }
+          .content .wrap .sidebar .sidebar-wrap .singer-info .info {
+            display: inline-block;
+            font-size: 12px;
+            width: 130px;
+            padding-left: 16px; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,181 @@
+body {
+  background: #f5f5f5; }
+
+.content {
+  width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 0;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3; }
+  .content .main {
+    display: inline-block;
+    border-right: 1px solid #d3d3d3;
+    width: 640px;
+    padding: 20px 33.5px; }
+    .content .main #singer-name {
+      font-size: 24px;
+      margin-bottom: 10px; }
+    .content .main #singer-pic {
+      height: 300px;
+      width: 640px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+    .content .main #singer-nav {
+      display: flex;
+      font-size: 16px;
+      background: #f5f5f5;
+      border: 1px solid #d3d3d3; }
+      .content .main #singer-nav li {
+        cursor: pointer;
+        line-height: 37px;
+        width: 136px;
+        height: 37px;
+        text-align: center; }
+      .content .main #singer-nav .active {
+        height: 36px;
+        background: #fff;
+        border-top: 2px solid #d90000;
+        border-left: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3; }
+    .content .main #singer-songs {
+      margin: 20px 0; }
+      .content .main #singer-songs #play-all {
+        margin-bottom: 20px;
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        color: #fff;
+        line-height: 30px;
+        background: #007fd3;
+        border-radius: 5px;
+        border: 1px solid #f5f5f5; }
+        .content .main #singer-songs #play-all:hover {
+          background: #229ff2; }
+      .content .main #singer-songs .bg-w {
+        background: #fff; }
+      .content .main #singer-songs .bg-b {
+        background: #f2f2f2; }
+      .content .main #singer-songs .song {
+        line-height: 30px;
+        height: 30px;
+        font-size: 12px;
+        display: flex; }
+        .content .main #singer-songs .song .album {
+          float: right;
+          display: block;
+          width: 130px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .content .main #singer-songs .song .number {
+          display: inline-block;
+          width: 10px;
+          color: #aaa;
+          margin-left: 20px;
+          margin-right: 40px; }
+        .content .main #singer-songs .song .btn {
+          cursor: pointer;
+          position: relative;
+          top: 5px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 3px solid #b3b3b3;
+          background: #f2f2f2; }
+          .content .main #singer-songs .song .btn::before, .content .main #singer-songs .song .btn::after {
+            position: absolute;
+            content: '';
+            font-size: 0; }
+          .content .main #singer-songs .song .btn:hover {
+            border-color: #999; }
+        .content .main #singer-songs .song .play::before {
+          top: 1px;
+          left: 4px;
+          border-left: 8px solid #b3b3b3;
+          border-top: 6px solid transparent;
+          border-bottom: 6px solid transparent; }
+        .content .main #singer-songs .song .play:hover::before {
+          border-left-color: #999; }
+        .content .main #singer-songs .song .add {
+          display: none;
+          margin-right: 70px; }
+          .content .main #singer-songs .song .add::before {
+            top: 5.5px;
+            left: 2.4px;
+            background: #b3b3b3;
+            width: 9px;
+            height: 3px; }
+          .content .main #singer-songs .song .add::after {
+            top: 2.5px;
+            left: 5.5px;
+            background: #b3b3b3;
+            width: 3px;
+            height: 9px; }
+          .content .main #singer-songs .song .add:hover::after, .content .main #singer-songs .song .add:hover::before {
+            background: #999; }
+        .content .main #singer-songs .song .song-name {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: inline-block;
+          width: 310px;
+          margin-left: 10px;
+          color: #000; }
+          .content .main #singer-songs .song .song-name:hover {
+            text-decoration: underline; }
+        .content .main #singer-songs .song .song-time {
+          display: inline-block;
+          width: 90px; }
+        .content .main #singer-songs .song:hover .song-time {
+          display: none; }
+        .content .main #singer-songs .song:hover .add {
+          display: inline-block; }
+    .content .main #singer-album {
+      display: none;
+      margin: 20px 0;
+      width: 640px; }
+      .content .main #singer-album .album {
+        display: inline-block;
+        margin: 0 6px 30px;
+        width: 147px;
+        height: 175px; }
+        .content .main #singer-album .album .name {
+          height: 28px;
+          font-size: 16px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+    .content .main #singer-introduce {
+      display: none;
+      padding-top: 20px;
+      font-size: 16px;
+      text-indent: 32px; }
+  .content .sidebar {
+    padding: 20px 30px;
+    float: right;
+    width: 210px; }
+    .content .sidebar .sidebar-tit {
+      font-size: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d3d3d3; }
+    .content .sidebar .rec-singer-wrap {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .content .sidebar .rec-singer-wrap .rec-singer {
+        width: 50px;
+        height: 92px;
+        margin: 0 2px; }
+        .content .sidebar .rec-singer-wrap .rec-singer a {
+          font-size: 14px;
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #000000; }
+          .content .sidebar .rec-singer-wrap .rec-singer a:hover {
+            text-decoration: underline; }
+
+/*# sourceMappingURL=singer.css.map */

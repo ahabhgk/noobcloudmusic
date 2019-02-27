@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+@function rem($n) {
+    @return $n * 0.02rem
+}
+.header-wrap {
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+.header {
+    height: rem(64);
+    background: #e52826;
+    display: flex;
+    align-items: center;
+    .logo {
+        margin-left: rem(18);
+        font-size: 0;
+        .h-logo {
+            width: rem(25);
+            height: rem(25);
+        }
+        .h-tit {
+            line-height: rem(25);
+            margin-left: rem(6);
+            float: right;
+            height: rem(25);
+            color: #ffffff;
+            font-size: rem(20);
+            font-weight: bold;
+        }
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    .n-li {
+        font-size: rem(14);
+        height: rem(40);
+        width: rem(70);
+        text-align: center;
+        line-height: rem(40);
+    }
+    .n-active {
+        color: #d33a31;
+        border-bottom: rem(2) solid #d33a31;
+    }
+}
+.tit {
+    padding-left: rem(10);
+    display: block;
+    font-size: rem(16);
+    border-left: rem(2) solid #d33a31;
+    margin-bottom: rem(20);
+}
+.wrap {
+    margin-top: rem(20);
+}
+.rec-list {
+    margin-top: rem(126);
+}
+.r-l-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .r-l {
+        font-size: 0;
+        width: rem(122);
+        height: rem(190);
+        .img-wrap {
+            position: relative;
+            .num {
+                position: absolute;
+                right: 0;
+                color: #ffffff;
+                font-size: rem(14);
+            }
+            img {
+                width: rem(122);
+                height: rem(122);
+            }
+        }
+        .r-l-des {
+            padding: rem(4);
+            height: rem(60);
+            font-size: rem(14);
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+.n-wrap {
+    display: flex;
+    flex-direction: column;
+    .new {
+        height: rem(55);
+        border-bottom: rem(1) solid #dddddd;
+        padding-left: rem(8);
+        .n-song {
+            font-weight: normal;
+            font-size: rem(16);
+            color: #000000;
+            margin-top: rem(8);
+        }
+        .n-singer {
+            color: #888888;
+            font-size: rem(12);
+        }
+        .add {
+            position: relative;
+            float: right;
+            width: rem(22);
+            height: rem(22);
+            border: rem(2) solid #dddddd;
+            border-radius: 50%;
+            margin-top: rem(18);
+            margin-right: rem(10);
+            background: #ffffff;
+            &::before, &::after {
+                position: absolute;
+                content: "";
+                font-size: 0;
+            }
+            &::before {
+                top: rem(7);
+                left: rem(4);
+                background: #dddddd;
+                width: rem(10);
+                height: rem(4);
+            }
+            &::after {
+                top: rem(4);
+                left: rem(7);
+                background: #dddddd;
+                width: rem(4);
+                height: rem(10);
+            }
+        }
+    }
+}
+.footer {
+    height: rem(200);
+    background-image: url(https://s3.music.126.net/m/s/img/recommand_bg_2x.png?d045fafc60e017b653f8065a87496922);
+    background-size: cover;
+}
+.search-content {
+    #search {
+        margin: rem(15) rem(10);
+        padding: 0 rem(20);
+        width: rem(315);
+        height: rem(30);
+        font-size: rem(14);
+        line-height: rem(30);
+        background-color: #f2f2f2;
+        border-radius: rem(15);
+    }
+}

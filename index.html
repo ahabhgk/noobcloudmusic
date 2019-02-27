@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./src/css/audio.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/index.css">
+    <title>cloudmusic</title>
+</head>
+<body>
+<div class="header">
+    <div class="header-main-wrap">
+        <div class="header-main">
+            <a href="./index.html" class="logo"></a>
+            <ul class="header-ul">
+                <li class="header-li"><a class="header-main_active header-a" href="javascript:;">发现音乐<sub class="dec dec_active"></sub></a></li>
+                <li class="header-li"><a class="header-a" href="javascript:;">我的音乐<sub class="dec"></sub></a></li>
+                <li class="header-li"><a class="header-a" href="javascript:;">朋友<sub class="dec"></sub></a></li>
+                <li class="header-li"><a class="header-a" href="javascript:;">商城<sub class="dec"></sub></a></li>
+                <li class="header-li"><a class="header-a" href="javascript:;">音乐人<sub class="dec"></sub></a></li>
+                <li class="hot header-li"><a class="header-a" href="javascript:;">下载客户端<sub class="dec"></sub></a><sup class="hot"></sup></li>
+            </ul>
+            <input id="search" class="header-main-search" type="search" placeholder="音乐/歌手/专辑" />
+
+            <ul id="search-display"></ul>
+
+            <button type="button">创作者中心</button>
+            <div id="login">
+                <a href="javascript:;">登录</a>
+                <div id="header-drop-unsign">
+                    <ul>
+                        <li><a href="javascript:;">手机号登录</a></li>
+                        <li><a href="javascript:;">微信登录</a></li>
+                        <li><a href="javascript:;">QQ登录</a></li>
+                        <li><a href="javascript:;">新浪微博登录</a></li>
+                        <li><a href="javascript:;">网易邮箱登录</a></li>
+                    </ul>
+                </div>
+                <div id="header-drop-signed">
+                    <ul>
+                        <li><a href="javascript:;">我的主页</a></li>
+                        <li><a href="javascript:;">我的消息</a></li>
+                        <li><a href="javascript:;">我的等级</a></li>
+                        <li><a href="javascript:;">VIP会员</a></li>
+                        <li><a href="javascript:;">个人设置</a></li>
+                        <li><a href="javascript:;">实名认证</a></li>
+                        <li><a href="javascript:;">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav-wrap">
+        <div class="header-nav">
+            <ul>
+                <li><a class="nav_active" href="javascript:;">推荐</a></li>
+                <li><a href="javascript:;">排行榜</a></li>
+                <li><a href="javascript:;">歌单</a></li>
+                <li><a href="javascript:;">主播电台</a></li>
+                <li><a href="javascript:;">歌手</a></li>
+                <li><a href="javascript:;">新碟上架</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="login-page">
+    <div class="lp-head"><span class="lp-tit">登录</span><button type="button" class="lp-close">X</button></div>
+        <form action="/" method="GET" class="lp-login">
+            <input name="acount" type="text" id="acount" placeholder="请输入账号" />
+            <input name="password" type="password" id="password" placeholder="请输入密码" />
+            <div class="r-p"><input type="checkbox" id="remember-password" />记住密码 7 天</div>
+            <button id="submit" type="submit">登录</button>
+        </form>
+        <form method="POST" class="lp-reg">
+            <input type="text" id="r-acount" placeholder="请输入注册使用的账号" />
+            <input type="password" id="r-password" placeholder="请输入注册使用的密码" />
+            <button id="r-submit" type="submit">注册</button>
+        </form>
+    <div class="lp-bottom">
+        <a href="javascript:;" id="go-log">现在登录</a>
+        <a href="javascript:;" id="go-reg">没有账号？现在注册</a>
+    </div>
+</div>
+
+
+<div class="content">
+    <div class="carousel-wrap">
+        <div class="carousel-main">
+            <div id="carousel"></div>
+            <div class="download">
+                <button type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="main">
+            <div class="recommends box">
+                <div class="head-text">
+                    <a href="javascript:;" class="text">热门推荐</a>
+                    <a href="javascript:;" class="list">华语</a>
+                    <span>|</span>
+                    <a href="javascript:;" class="list">流行</a>
+                    <span>|</span>
+                    <a href="javascript:;" class="list">摇滚</a>
+                    <span>|</span>
+                    <a href="javascript:;" class="list">民谣</a>
+                    <span>|</span>
+                    <a href="javascript:;" class="list">电子</a>
+                    <a href="javascript:;" class="more">更多</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/QYX0zirg0EBvbFOCO9WcUA==/18886311230928378.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">218万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">当自然之声流进电音的世界 | 瞬间捕获双耳</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/5DOwAf0dpCOLQLXkBUmYoQ==/109951163819242649.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">59万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">Anjunadeep 巴 黎 高 定 时 装 周!!!</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/Opt0YIVp3A3OA3lUP6pi2A==/5639395138938793.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">53万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">史上最动人的怀旧英文歌</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/cM7pD2sZd3BnfDQaB2mzrg==/109951163082272972.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">35万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">可能否 - 冯提莫</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/4egjX0tpZLeYLX87UlgIKQ==/109951163714943722.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">65万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">与月光为邻，当个夜旅人。</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/70mkT65aSP0qVX1PVxdQ_w==/109951163825124006.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">2329</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">春节将至，我想祝你些什么呢？</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/oQlBNFRQgdWTWBFyOGBi3g==/109951163509378674.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">31204</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">交响乐 电影背景音乐 合唱</a>
+                </div>
+                <div class="rec">
+                    <img src="http://p1.music.126.net/_qfgLykGRd9LUU0J2jx3xw==/109951163825925446.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">31695</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">老外说 Oh…interesting，你以为是夸你有趣？呵呵呵我笑了</a>
+                </div>
+            </div>
+
+            <div id="personal-recommends" class="box">
+                <div class="head-text">
+                    <a href="javascript:;" class="text">个性化推荐</a>
+                </div>
+
+                <div id="rec" class="rec">
+                    <div class="rec-wrap">
+                        <div id="rec-week"></div>
+                        <div id="rec-date"></div>
+                    </div>
+                    <a class="tit" href="javascript:;">日推轮播</a>
+                    <p class="disc">根据你的口味生成，每天6:00更新</p>
+                </div>
+                <div class="rec">
+                    <img src="https://p2.music.126.net/iIhO0z0iIZfLPqRGW3SFtg==/19162288649021268.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">450.7万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">重度失眠歌单【白噪音/纯音</a>
+                    <p class="disc">根据你可能喜欢的歌单《极简主义 _ 氛围PIANO（壹）》推荐</p>
+                </div>
+                <div class="rec">
+                    <img src="https://p2.music.126.net/nP7knXfMsG7uMDw7jszeYQ==/7719671139487381.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">228.7万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">弗拉明戈，舞动的音符</a>
+                    <p class="disc">根据你收藏的歌单《躁动的资本主义情怀》推荐</p>
+                </div>
+                <div class="rec">
+                    <img src="https://p2.music.126.net/T0AFwU8k4zqMB8rSmxEkCA==/109951163784371936.jpg?param=140y140" />
+                    <div class="bottom">
+                        <span class="icon-headphone"></span>
+                        <span class="play-number">122.1万</span>
+                        <a href="javascript:;" class="play"></a>
+                    </div>
+                    <a class="tit" href="javascript:;">［自然纪］在音符与梦幻森林之间</a>
+                    <p class="disc">根据你收藏的歌单《氛围钢琴｜纯净极简》推荐</p>
+                </div>
+            </div>
+            <div class="new box">
+                <div class="head-text">
+                    <a href="javascript:;" class="text">新碟上架</a>
+                    <a href="javascript:;" class="more">更多</a>
+                </div>
+                <div class="new-wrap">
+                    <button type="button" class="new-btn">《</button>
+                    <div class="new-main">
+                        <div id="new-con">
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p3.music.126.net/AmEaUMtl8R1Aql12-ydRsg==/109951163754790236.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">幕后之王 电视原声音乐专辑</p>
+                                <p class="singer">群星</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p3.music.126.net/5fOHbAii9M5SFWj78bpLzw==/109951163774726743.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">제33회 골든디스크어워즈</p>
+                                <p class="singer">V.A.</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/SCKSIhCbxlqkC9rTjIWVAQ==/109951163739212997.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">进阶</p>
+                                <p class="singer">林俊杰</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/Jm9qXWu35-CYKLw6o1KifQ==/109951163800101837.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">PERCENT</p>
+                                <p class="singer">Apink</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/kCi0Cy3rR-OpRtc7ISkZ-A==/109951163725046743.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">沙发海</p>
+                                <p class="singer">陈绮贞</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/XnjFt4mks7xKE-snUwhGLw==/109951163817255340.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">i'm so tired...</p>
+                                <p class="singer">Lauv / Troye Sivan</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/aMVPsO00OqlVTS2yMH8RgA==/109951163785600029.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">起风了</p>
+                                <p class="singer">吴青峰</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/Vx13htQOb-CYYgzBsupAfQ==/109951163814044337.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">DNA</p>
+                                <p class="singer">Backstreet Boys</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/U6gU3lPRFpTbQXrSJDsJaA==/109951163814200664.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">以团之名 第二期</p>
+                                <p class="singer">以团之名</p>
+                            </div>
+                            <div class="record-wrap">
+                                <div class="record">
+                                    <img src="http://p4.music.126.net/fA8huP078iPDTtLR2xM8Eg==/109951163794667716.jpg?param=100y100" />
+                                </div>
+                                <p class="record-tit">여자친구 The 2nd Album 'Time for us'</p>
+                                <p class="singer">GFRIEND</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="new-btn">》</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-wrap">
+                <div class="sidebar-tit">入驻歌手</div>
+                <a class="singer-info" href="./singer.html?id=10559">
+                    <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" />
+                    <h4 class="name">张惠妹</h4>
+                    <p class="info">台湾歌手张惠妹</p>
+                </a>
+                <a class="singer-info" href="./singer.html?id=1160085">
+                    <img src="http://p2.music.126.net/1EN_iqQWU_E3DafzEOh3cA==/3302932937408956.jpg?param=62y62" />
+                    <h4 class="name">Fine乐团</h4>
+                    <p class="info">独立音乐人</p>
+                </a>
+                <a class="singer-info" href="./singer.html?id=5345">
+                    <img src="http://p2.music.126.net/ZuktZvjcxpYBjcWC3gmbPg==/19027048718765608.jpg?param=62y62" />
+                    <h4 class="name">萬曉利</h4>
+                    <p class="info">民谣歌手、中国现…</p>
+                </a>
+                <a class="singer-info" href="./singer.html?id=6731">
+                    <img src="http://p2.music.126.net/v_zYgE9kmAwVGWV2c8hFxA==/7943971513291094.jpg?param=62y62" />
+                    <h4 class="name">音乐人赵雷</h4>
+                    <p class="info">民谣歌手</p>
+                </a>
+                <a class="singer-info" href="./singer.html?id=3669">
+                    <img src="http://p2.music.126.net/U-duMw2-FE0wNRsuwGktPw==/109951162895674268.jpg?param=62y62" />
+                    <h4 class="name">王三溥</h4>
+                    <p class="info">音乐人</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-main">
+        <a href="javascript:;">关于网易</a>
+        <span>|</span>
+        <a href="javascript:;">客户服务</a>
+        <span>|</span>
+        <a href="javascript:;">服务条款</a>
+        <span>|</span>
+        <a href="javascript:;">网站导航</a>
+        <span>|</span>
+        <a href="javascript:;">意见反馈</a>
+        <p>网易公司版权所有©1997-2019杭州乐读科技有限公司运营：浙网文[2018]3506-263号<br />
+            违法和不良信息举报电话：0571-89853516 举报邮箱：ncm5990@163.com</p>
+    </div>
+</div>
+
+
+<div id="back-to-top">
+    ⌃ TOP
+</div>
+
+
+<div class="view">
+    <div class="music-box">
+        <h1 class="tit"><span id="view-close"></span><span class="tit-d">播放列表</em></h1>
+        <ul id="music-list">
+        </ul>
+    </div>
+    <div class="music-lyrics">
+        <h1 id="lyrics-tit">歌词</h1>
+        <div id="lyrics-wrap">
+            <ul id="lyrics"></ul>
+            <div id="barrage-display"></div>
+            <div class="barrage-warning">弹幕内容不能为空哦 XD</div>
+        </div>
+        <div class="barrage-from">
+            <input type="text" id="barrage-input" /><button type="button" id="barrage-btn">发送</button>
+        </div>
+    </div>
+</div>
+<div id="player-bar">
+    <div class="player-wrap">
+        <audio id="audio" src="javascript:;">MLGB 你浏览器连个 audio 都不支持，纸带打孔？</audio>
+        <button id="pre" type="button"></button>
+        <button id="play" type="button" class="pause"></button>
+        <button id="next" type="button"></button>
+        <div id="player-jump">
+            <img id="playing-pic" width="36px" height="36px" src="http://s4.music.126.net/style/web2/img/default/default_album.jpg" />
+        </div>
+        <span class="player-progress-wrap">
+            <a href="javascript:;" id="playing-song"></a>
+            <a href="javascript:;" id="playing-singer"></a><br />
+            <div id="bar">
+                <div class="add-tip">已添加到播放列表</div>
+                <div id="progress">
+                    <div id="dot"></div>
+                </div>
+            </div>
+            <div id="time">
+                <span id="played-time">00:00</span> /
+                <span id="toplay-time">00:00</span>
+            </div>
+        </span>
+        <div class="play-order">
+            <button id="order" class="active" type="button"></button>
+            <button id="loop" type="button"></button>
+            <button id="random" type="button"></button>
+        </div>
+    </div>
+</div>
+<script src="src/js/ajax.js"></script>
+<script src="src/js/audio.js"></script>
+<script src="src/js/index.js"></script>
+</body>
+</html>

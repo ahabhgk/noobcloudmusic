@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none; }
+
+.header-wrap {
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  position: fixed; }
+
+.header {
+  height: 1.28rem;
+  background: #e52826;
+  display: flex;
+  align-items: center; }
+  .header .logo {
+    margin-left: 0.36rem;
+    font-size: 0; }
+    .header .logo .h-logo {
+      width: 0.5rem;
+      height: 0.5rem; }
+    .header .logo .h-tit {
+      line-height: 0.5rem;
+      margin-left: 0.12rem;
+      float: right;
+      height: 0.5rem;
+      color: #ffffff;
+      font-size: 0.4rem;
+      font-weight: bold; }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff;
+  border-bottom: 1px solid #dddddd; }
+  .nav .n-li {
+    font-size: 0.28rem;
+    height: 0.8rem;
+    width: 1.4rem;
+    text-align: center;
+    line-height: 0.8rem; }
+  .nav .n-active {
+    color: #d33a31;
+    border-bottom: 0.04rem solid #d33a31; }
+
+.tit {
+  padding-left: 0.2rem;
+  display: block;
+  font-size: 0.32rem;
+  border-left: 0.04rem solid #d33a31;
+  margin-bottom: 0.4rem; }
+
+.wrap {
+  margin-top: 0.4rem; }
+
+.rec-list {
+  margin-top: 2.52rem; }
+
+.r-l-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .r-l-wrap .r-l {
+    font-size: 0;
+    width: 2.44rem;
+    height: 3.8rem; }
+    .r-l-wrap .r-l .img-wrap {
+      position: relative; }
+      .r-l-wrap .r-l .img-wrap .num {
+        position: absolute;
+        right: 0;
+        color: #ffffff;
+        font-size: 0.28rem; }
+      .r-l-wrap .r-l .img-wrap img {
+        width: 2.44rem;
+        height: 2.44rem; }
+    .r-l-wrap .r-l .r-l-des {
+      padding: 0.08rem;
+      height: 1.2rem;
+      font-size: 0.28rem;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+
+.n-wrap {
+  display: flex;
+  flex-direction: column; }
+  .n-wrap .new {
+    height: 1.1rem;
+    border-bottom: 0.02rem solid #dddddd;
+    padding-left: 0.16rem; }
+    .n-wrap .new .n-song {
+      font-weight: normal;
+      font-size: 0.32rem;
+      color: #000000;
+      margin-top: 0.16rem; }
+    .n-wrap .new .n-singer {
+      color: #888888;
+      font-size: 0.24rem; }
+    .n-wrap .new .add {
+      position: relative;
+      float: right;
+      width: 0.44rem;
+      height: 0.44rem;
+      border: 0.04rem solid #dddddd;
+      border-radius: 50%;
+      margin-top: 0.36rem;
+      margin-right: 0.2rem;
+      background: #ffffff; }
+      .n-wrap .new .add::before, .n-wrap .new .add::after {
+        position: absolute;
+        content: "";
+        font-size: 0; }
+      .n-wrap .new .add::before {
+        top: 0.14rem;
+        left: 0.08rem;
+        background: #dddddd;
+        width: 0.2rem;
+        height: 0.08rem; }
+      .n-wrap .new .add::after {
+        top: 0.08rem;
+        left: 0.14rem;
+        background: #dddddd;
+        width: 0.08rem;
+        height: 0.2rem; }
+
+.footer {
+  height: 4rem;
+  background-image: url(https://s3.music.126.net/m/s/img/recommand_bg_2x.png?d045fafc60e017b653f8065a87496922);
+  background-size: cover; }
+
+.search-content #search {
+  margin: 0.3rem 0.2rem;
+  padding: 0 0.4rem;
+  width: 6.3rem;
+  height: 0.6rem;
+  font-size: 0.28rem;
+  line-height: 0.6rem;
+  background-color: #f2f2f2;
+  border-radius: 0.3rem; }
+
+/*# sourceMappingURL=moble.css.map */
