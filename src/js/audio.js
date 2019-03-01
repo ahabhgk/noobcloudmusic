@@ -1,5 +1,5 @@
 // #login 的 hover
-let hasSigned = false // wbe
+let hasSigned = false
 let login = document.querySelector("#login")
 login.addEventListener("mouseenter", (ev) => {
     let sign = hasSigned ? ev.target.children[2] : ev.target.children[1]
